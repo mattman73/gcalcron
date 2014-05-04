@@ -403,6 +403,7 @@ def datetime_to_at(dt):
 
 def main(argv):
   # Parse the command-line flags.
+  global flags
   flags = parser.parse_args(argv[1:])
 
   level = getattr(logging, flags.logging_level)
